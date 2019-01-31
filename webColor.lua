@@ -30,7 +30,6 @@ return function( colorString )
   local r = tonumber( string.sub(colorString, 2, 3), 16 )/255
   local g = tonumber( string.sub(colorString, 4, 5), 16 )/255
   local b = tonumber( string.sub(colorString, 6, 7), 16 )/255
-  print(#colorString, colorString)
   if #colorString == 9 then
     local a = tonumber( string.sub(colorString, 8, 9), 16 )/255
     return r,g,b,a
